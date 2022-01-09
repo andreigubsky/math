@@ -1,0 +1,61 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math</title>
+
+  </head>
+  <body>
+    <h1>Math</h1>
+    <div id="task">
+      Задание:
+      <p>c:<input type="text" name="" value=""></p>
+      <p>x:<input type="text" name="" value=""></p>
+      <p>b:<input type="text" name="" value=""></p>
+    </div>
+
+
+
+<input type="checkbox" name="" value="">
+Логарифмическая
+y=c * ln x + b
+<br/>
+<input type="checkbox" name="" value="">
+Экспоненциальная
+y= c*e ^b*x
+<br/>
+<input type="checkbox" name="" value="">
+Степенная
+y=c*x^b
+<br/>
+<input type="checkbox" name="" value="">
+Скользящее среднее
+F=(A+A(t-1)+A(t-n+1))/n
+<br/>
+<input type="checkbox" name="" value="">
+Линейная апроксимация
+y=a*x+b
+<br/>
+<input type="checkbox" name="" value="">
+Метод наименьших квадратов
+https://prog-cpp.ru/wp-content/uploads/2016-12-28_17-56-25.png
+<br/>
+<input type="checkbox" name="" value="">
+Тангент-линейное приближение
+y=f(a)+f'(a)*(x-a)
+<br/>
+<p><input type="button" id="button" name="" value="Ответ" onclick="calc()"></p>
+<script>
+  var y,c, x,b;
+  c=1, x=10, b=0;
+  y=c*Math.log(x)+b;
+  button.onclick = function() {
+    alert('y='+y)
+  };
+</script>
+<br/>
+Ответ:
+<div id="result">
+
+</div>
+  </body>
+</html>
